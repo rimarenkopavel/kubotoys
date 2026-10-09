@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru" style=""><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бизидом Макси — KuboToys (мобильная)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@700;800;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Nunito','system-ui','sans-serif'] } } } }
+</script>
+<style>.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}</style>
+<script src="editor.js" defer=""></script>
+<script src="product.js" defer=""></script>
+</head>
+<body class="w-full max-w-[390px] mx-auto shadow-[0_0_40px_rgba(0,0,0,0.08)] bg-white text-[#1C1C1C] font-sans antialiased" style="">
+
+<div class="bg-[#2B5BAA] text-white text-xs h-9 flex items-center justify-center gap-2">
+  <i class="fa-solid fa-truck-fast text-[#F7C52D]"></i>Бесплатная доставка по Беларуси
+</div>
+
+<header data-design-id="m-header-a1b2c3" class="bg-white border-b border-[#E9ECEF] h-16 px-4 flex items-center justify-between sticky top-0 z-20">
+  <a href="home-mobile.html"><img src="assets/logo.png" alt="KuboToys" class="h-8 w-auto"></a>
+  <div class="flex items-center gap-2">
+    <a href="#" class="h-10 w-10 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center" aria-label="Позвонить"><i class="fa-solid fa-phone"></i></a>
+    <button data-design-id="m-cart-btn-d4e5f6" type="button" class="relative h-10 w-10 rounded-full bg-[#1C1C1C] text-white flex items-center justify-center" aria-label="Корзина"><i class="fa-solid fa-basket-shopping"></i><span class="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#E63329] text-[10px] font-bold flex items-center justify-center border-2 border-white" data-cart-count>0</span></button>
+    <details data-design-id="m-burger-menu-g7h8i9" class="group/burger">
+      <summary data-design-id="m-menu-btn-g7h8i9" class="list-none [&amp;::-webkit-details-marker]:hidden cursor-pointer h-10 w-10 rounded-full border border-[#E9ECEF] flex items-center justify-center group-open/burger:bg-[#EAF0FA] group-open/burger:text-[#2B5BAA] group-open/burger:border-transparent" aria-label="Меню">
+        <i class="fa-solid fa-bars group-open/burger:hidden"></i><i class="fa-solid fa-xmark hidden group-open/burger:inline"></i>
+      </summary>
+      <nav data-design-id="m-burger-panel-j1k2l3" class="absolute left-0 right-0 top-full bg-white border-b border-[#E9ECEF] shadow-[0_16px_32px_-16px_rgba(28,28,28,0.25)] px-4 pt-2 pb-4 text-[15px] font-semibold">
+        <a href="#" class="flex items-center justify-between py-4 border-b border-[#F1F3F5] text-[#1C1C1C]">Каталог<i class="fa-solid fa-chevron-right text-[11px] text-[#ADB5BD]"></i></a>
+        <details data-design-id="m-nav-info-dropdown-r4t5y6" class="group/info" open="">
+          <summary class="list-none [&amp;::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between py-4 text-[#1C1C1C] group-open/info:text-[#2B5BAA]">Информация<i class="fa-solid fa-chevron-down text-[11px] transition-transform group-open/info:rotate-180"></i></summary>
+          <ul class="pl-4 pb-1 text-sm">
+            <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Доставка и оплата</a></li>
+            <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Гарантии</a></li>
+            <li><a href="#" class="block py-3 text-[#838383]">Рассрочка</a></li>
+          </ul>
+        </details>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main data-design-id="pm-main-x1y2z3" class="pb-24">
+
+<nav data-design-id="pm-breadcrumbs-a1b2c3" class="px-4 pt-4 text-xs text-[#5F6670] flex items-center gap-1.5" aria-label="Хлебные крошки">
+  <a href="home-mobile.html">Главная</a><i class="fa-solid fa-chevron-right text-[8px] text-[#ADB5BD]"></i><a href="#">Каталог</a><i class="fa-solid fa-chevron-right text-[8px] text-[#ADB5BD]"></i><span class="text-[#1C1C1C] font-medium">Бизидом Макси</span>
+</nav>
+
+<section data-design-id="pm-gallery-d4e5f6" class="px-4 pt-3">
+  <div class="relative rounded-[24px] overflow-hidden bg-[#F8F9FA] aspect-square" data-zoom>
+    <img data-main-img src="assets/maxi/g1.jpg" alt="Бизидом Макси" class="w-full h-full object-cover">
+    <span class="absolute top-3 left-3 rounded-full bg-[#E63329] text-white text-[11px] font-bold px-3 py-1">Хит продаж</span>
+    <button type="button" data-gal="prev" aria-label="Предыдущее фото" class="absolute left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/95 shadow flex items-center justify-center"><i class="fa-solid fa-chevron-left text-sm"></i></button>
+    <button type="button" data-gal="next" aria-label="Следующее фото" class="absolute right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/95 shadow flex items-center justify-center"><i class="fa-solid fa-chevron-right text-sm"></i></button>
+    <span class="absolute bottom-3 right-3 rounded-full bg-[#1C1C1C]/75 text-white text-[11px] font-semibold px-2.5 py-1" data-gal-counter>1 / 11</span>
+  </div>
+  <div class="mt-3 -mx-4 px-4 flex gap-2 overflow-x-auto no-scrollbar"><button type="button" data-thumb data-src="assets/maxi/g1.jpg" aria-label="Фото 1" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-[#2B5BAA] bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g1.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g2.jpg" aria-label="Фото 2" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g2.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g3.jpg" aria-label="Фото 3" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g3.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g4.jpg" aria-label="Фото 4" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g4.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g5.jpg" aria-label="Фото 5" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g5.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g6.jpg" aria-label="Фото 6" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g6.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g7.jpg" aria-label="Фото 7" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g7.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g8.jpg" aria-label="Фото 8" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g8.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g9.jpg" aria-label="Фото 9" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g9.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g10.jpg" aria-label="Фото 10" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g10.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button><button type="button" data-thumb data-src="assets/maxi/g11.jpg" aria-label="Фото 11" class="h-16 w-16 rounded-2xl overflow-hidden border-2 border-transparent bg-[#F8F9FA] shrink-0 hover:border-[#2B5BAA]/50 transition"><img src="assets/maxi/g11.jpg" alt="" loading="lazy" class="w-full h-full object-cover"></button></div>
+</section>
+
+<section data-design-id="pm-summary-g7h8i9" class="px-4 pt-5">
+  <div class="flex flex-wrap items-center gap-2 text-xs">
+    <span class="rounded-full bg-[#EAF0FA] text-[#2B5BAA] font-semibold px-3 py-1"><i class="fa-solid fa-child-reaching mr-1"></i>от 1 года до 5 лет</span>
+    <span class="rounded-full bg-[#FEF6DC] text-[#8A6A00] font-semibold px-3 py-1">43+ элемента</span>
+  </div>
+  <h1 class="mt-3 font-display font-black text-[32px] leading-[1.05]">Бизидом Макси</h1>
+  <a href="#" data-goto-tab="reviews" class="mt-2 inline-flex items-center gap-2 text-sm"><span class="text-[#F7C52D] text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><b>5,0</b><span class="text-[#5F6670] underline underline-offset-4 decoration-[#5F6670]/30">17 отзывов</span></a>
+  <div class="mt-4 flex items-end gap-3">
+    <span data-price-main class="font-display font-black text-[34px] leading-none">280 Br</span>
+    <span class="pb-0.5 text-sm text-[#5F6670]">или <b data-installment class="text-[#1C1C1C]">70 Br</b> × 4 мес.</span>
+  </div>
+  <p class="mt-3 text-sm leading-relaxed text-[#5F6670]">Более 43 развивающих элементов, которые были разработаны при помощи логопедов и специалистов по детскому развитию, для быстрого и гармоничного развития.</p>
+
+  <div class="mt-5">
+    <div class="text-sm font-semibold">Цвет: <span data-color-name class="text-[#5F6670] font-medium">Натуральный</span></div>
+    <div role="radiogroup" aria-label="Цвет" class="mt-3 flex items-center gap-3">
+          <button type="button" role="radio" aria-checked="true" aria-label="Натуральный — 280 Br" title="Натуральный — 280 Br" data-color="natur" data-name="Натуральный" data-price="280" data-img="assets/maxi/g1.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 ring-2 ring-[#2B5BAA] ring-offset-2" style="background:rgb(221,199,159)"></button>
+          <button type="button" role="radio" aria-checked="false" aria-label="Бирюзовый — 300 Br" title="Бирюзовый — 300 Br" data-color="biruza" data-name="Бирюзовый" data-price="300" data-img="assets/maxi/v-biruza.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 " style="background:rgb(37,232,219)"></button>
+          <button type="button" role="radio" aria-checked="false" aria-label="Фиолетовый — 300 Br" title="Фиолетовый — 300 Br" data-color="fiolet" data-name="Фиолетовый" data-price="300" data-img="assets/maxi/v-fiolet.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 " style="background:rgb(126,40,255)"></button>
+          <button type="button" role="radio" aria-checked="false" aria-label="Серый — 300 Br" title="Серый — 300 Br" data-color="seryi" data-name="Серый" data-price="300" data-img="assets/maxi/v-seryi.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 " style="background:rgb(96,96,96)"></button>
+          <button type="button" role="radio" aria-checked="false" aria-label="Нежно серый — 330 Br" title="Нежно серый — 330 Br" data-color="negno_seryi" data-name="Нежно серый" data-price="330" data-img="assets/maxi/v-negno_seryi.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 " style="background:rgb(181,181,181)"></button>
+          <button type="button" role="radio" aria-checked="false" aria-label="Нежно розовый — 330 Br" title="Нежно розовый — 330 Br" data-color="negno_rozovyi" data-name="Нежно розовый" data-price="330" data-img="assets/maxi/v-negno_rozovyi.jpg" class="h-10 w-10 rounded-full border border-black/10 transition hover:scale-110 " style="background:rgba(255,25,25,0.25)"></button>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div class="text-sm font-semibold">Дополнительные опции</div>
+    <div class="mt-3 space-y-2">
+          <label class="flex items-center gap-3 rounded-2xl border border-[#E9ECEF] bg-white px-4 py-3 cursor-pointer hover:border-[#2B5BAA] has-[:checked]:border-[#2B5BAA] has-[:checked]:bg-[#F4F7FC] transition">
+            <input type="checkbox" data-addon="plate" data-addon-name="Именная табличка" data-addon-price="0" class="h-5 w-5 rounded accent-[#2B5BAA] shrink-0">
+            <span class="h-9 w-9 rounded-xl bg-[#F8F9FA] text-[#2B5BAA] flex items-center justify-center shrink-0"><i class="fa-solid fa-signature"></i></span>
+            <span class="flex-1 text-sm font-medium leading-snug">Именная табличка</span>
+            <span class="text-sm whitespace-nowrap"><span class="text-xs text-[#ADB5BD] line-through mr-1.5">10 Br</span><span class="font-bold text-[#4CAF50]">Бесплатно</span></span>
+          </label>
+          <input type="text" data-plate-field maxlength="20" placeholder="Напишите имя ребёнка или желаемую надпись" class="hidden w-full h-12 rounded-2xl border border-[#E9ECEF] px-4 text-sm outline-none focus:border-[#2B5BAA]">
+          <label class="flex items-center gap-3 rounded-2xl border border-[#E9ECEF] bg-white px-4 py-3 cursor-pointer hover:border-[#2B5BAA] has-[:checked]:border-[#2B5BAA] has-[:checked]:bg-[#F4F7FC] transition">
+            <input type="checkbox" data-addon="light" data-addon-name="Подсветка внутри домика" data-addon-price="15" class="h-5 w-5 rounded accent-[#2B5BAA] shrink-0">
+            <span class="h-9 w-9 rounded-xl bg-[#F8F9FA] text-[#2B5BAA] flex items-center justify-center shrink-0"><i class="fa-solid fa-lightbulb"></i></span>
+            <span class="flex-1 text-sm font-medium leading-snug">Подсветка внутри домика</span>
+            <span class="text-sm whitespace-nowrap"><span class="font-bold text-[#1C1C1C]">+15 Br</span></span>
+          </label>
+          <label class="flex items-center gap-3 rounded-2xl border border-[#E9ECEF] bg-white px-4 py-3 cursor-pointer hover:border-[#2B5BAA] has-[:checked]:border-[#2B5BAA] has-[:checked]:bg-[#F4F7FC] transition">
+            <input type="checkbox" data-addon="cube" data-addon-name="Мини Кубик со скидкой 20%" data-addon-price="40" class="h-5 w-5 rounded accent-[#2B5BAA] shrink-0">
+            <span class="h-9 w-9 rounded-xl bg-[#F8F9FA] text-[#2B5BAA] flex items-center justify-center shrink-0"><i class="fa-solid fa-cube"></i></span>
+            <span class="flex-1 text-sm font-medium leading-snug">Мини Кубик со скидкой 20%</span>
+            <span class="text-sm whitespace-nowrap"><span class="text-xs text-[#ADB5BD] line-through mr-1.5">50 Br</span><span class="font-bold text-[#1C1C1C]">+40 Br</span></span>
+          </label>
+          <label class="flex items-center gap-3 rounded-2xl border border-[#E9ECEF] bg-white px-4 py-3 cursor-pointer hover:border-[#2B5BAA] has-[:checked]:border-[#2B5BAA] has-[:checked]:bg-[#F4F7FC] transition">
+            <input type="checkbox" data-addon="puzzle" data-addon-name="Пазлы со скидкой 30%" data-addon-price="20" class="h-5 w-5 rounded accent-[#2B5BAA] shrink-0">
+            <span class="h-9 w-9 rounded-xl bg-[#F8F9FA] text-[#2B5BAA] flex items-center justify-center shrink-0"><i class="fa-solid fa-puzzle-piece"></i></span>
+            <span class="flex-1 text-sm font-medium leading-snug">Пазлы со скидкой 30%</span>
+            <span class="text-sm whitespace-nowrap"><span class="text-xs text-[#ADB5BD] line-through mr-1.5">30 Br</span><span class="font-bold text-[#1C1C1C]">+20 Br</span></span>
+          </label>
+    </div>
+  </div>
+  <div class="mt-5 rounded-[20px] bg-[#F8F9FA] p-4">
+    <div class="flex items-center justify-between mb-3"><span class="text-sm text-[#5F6670]">Общая стоимость</span><span data-total class="font-display font-black text-2xl">280 Br</span></div>
+    <div class="flex items-center gap-3">
+            <div class="h-14 flex items-center rounded-full border border-[#E9ECEF] bg-white shrink-0">
+              <button type="button" data-qty="-1" class="h-14 w-11 text-[#5F6670] hover:text-[#2B5BAA]" aria-label="Меньше"><i class="fa-solid fa-minus text-sm"></i></button>
+              <input data-qty-input type="number" min="1" value="1" aria-label="Количество" class="w-8 text-center font-semibold outline-none bg-transparent [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none">
+              <button type="button" data-qty="1" class="h-14 w-11 text-[#5F6670] hover:text-[#2B5BAA]" aria-label="Больше"><i class="fa-solid fa-plus text-sm"></i></button>
+            </div>
+            <button type="button" data-add-to-cart class="flex-1 h-14 rounded-full bg-[#2B5BAA] hover:bg-[#214A8F] text-white font-semibold flex items-center justify-center gap-2 shadow-[0_10px_24px_-8px_rgba(43,91,170,0.55)]"><i class="fa-solid fa-basket-shopping"></i>В корзину</button>
+          </div>
+          <button type="button" data-buy-now class="mt-3 w-full h-14 rounded-full border-2 border-[#1C1C1C] font-semibold hover:bg-[#1C1C1C] hover:text-white transition flex items-center justify-center gap-2"><i class="fa-solid fa-bolt text-[#F7C52D]"></i>Покупка в 1 клик</button>
+  </div>
+  <div class="mt-5 grid grid-cols-2 gap-3"><div class="flex items-center gap-3"><span class="h-10 w-10 shrink-0 rounded-xl bg-[#EAF6EB] text-[#3B9C40] flex items-center justify-center"><i class="fa-solid fa-truck"></i></span><div class="leading-tight"><div class="text-sm font-semibold">Бесплатно до почты</div><div class="text-xs text-[#5F6670]">по Беларуси</div></div></div><div class="flex items-center gap-3"><span class="h-10 w-10 shrink-0 rounded-xl bg-[#FEF6DC] text-[#C99A08] flex items-center justify-center"><i class="fa-solid fa-box-open"></i></span><div class="leading-tight"><div class="text-sm font-semibold">Приедет собранным</div><div class="text-xs text-[#5F6670]">сразу к игре</div></div></div><div class="flex items-center gap-3"><span class="h-10 w-10 shrink-0 rounded-xl bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center"><i class="fa-solid fa-credit-card"></i></span><div class="leading-tight"><div class="text-sm font-semibold">Рассрочка 0%</div><div class="text-xs text-[#5F6670]">на 4 месяца</div></div></div><div class="flex items-center gap-3"><span class="h-10 w-10 shrink-0 rounded-xl bg-[#FDECEB] text-[#E63329] flex items-center justify-center"><i class="fa-solid fa-certificate"></i></span><div class="leading-tight"><div class="text-sm font-semibold">Сертификат ЕАЭС</div><div class="text-xs text-[#5F6670]">безопасные материалы</div></div></div></div>
+</section>
+
+<section data-design-id="pm-tabs-j1k2l3" data-tabs class="mt-8 border-t border-[#E9ECEF]">
+  <div role="tablist" class="sticky top-16 z-10 bg-white border-b border-[#E9ECEF] px-4 flex gap-6 overflow-x-auto no-scrollbar"><button type="button" role="tab" data-tab-btn="desc" aria-selected="true" class="shrink-0 px-1 py-4 text-[15px] font-semibold border-b-[3px] text-[#2B5BAA] border-[#2B5BAA] hover:text-[#2B5BAA] transition-colors">Описание</button><button type="button" role="tab" data-tab-btn="reviews" aria-selected="false" class="shrink-0 px-1 py-4 text-[15px] font-semibold border-b-[3px] text-[#5F6670] border-transparent hover:text-[#2B5BAA] transition-colors">Отзывы (17)</button><button type="button" role="tab" data-tab-btn="delivery" aria-selected="false" class="shrink-0 px-1 py-4 text-[15px] font-semibold border-b-[3px] text-[#5F6670] border-transparent hover:text-[#2B5BAA] transition-colors">Доставка и оплата</button><button type="button" role="tab" data-tab-btn="cert" aria-selected="false" class="shrink-0 px-1 py-4 text-[15px] font-semibold border-b-[3px] text-[#5F6670] border-transparent hover:text-[#2B5BAA] transition-colors">Сертификаты</button></div>
+  <div class="px-4 py-8">
+    <div data-tab-panel="desc" role="tabpanel">
+        <blockquote class="relative rounded-[24px] bg-[#FEF6DC] p-5">
+          <i class="fa-solid fa-quote-left text-[#F7C52D] text-2xl"></i>
+          <p class="mt-3 text-base leading-relaxed font-medium">Когда мы искали игрушку, которая заменит стопятьсот ненужных и некачественных мелочей, сохранит порядок в комнате и надолго увлечет малыша, мы рассматривали именно БизиДом Макси. Игрушка, проверенная нашим сыном, временем и отзывами тысяч довольных клиентов!</p>
+        </blockquote>
+        <p class="mt-6 text-[16px] leading-relaxed text-[#3D434A]">БизиДом Макси – это самая популярная модель наших домиков. Ведь, в этом домике более 43 развивающих элементов, которые были специально разработаны при помощи логопедов и специалистов по детскому развитию, для быстрого и гармоничного развития Вашего малыша.</p>
+
+        <h3 class="mt-10 font-display font-extrabold text-[22px] leading-tight">6 цветов на выбор</h3>
+        <div class="mt-5 grid grid-cols-2 gap-4"><button type="button" data-zoom="assets/maxi/c1.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c1.jpg" alt="Бизидом Макси — Натуральный" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgb(221,199,159)"></span>Натуральный</span></button><button type="button" data-zoom="assets/maxi/c2.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c2.jpg" alt="Бизидом Макси — Бирюзовый" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgb(37,232,219)"></span>Бирюзовый</span></button><button type="button" data-zoom="assets/maxi/c3.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c3.jpg" alt="Бизидом Макси — Фиолетовый" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgb(126,40,255)"></span>Фиолетовый</span></button><button type="button" data-zoom="assets/maxi/c4.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c4.jpg" alt="Бизидом Макси — Серый" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgb(96,96,96)"></span>Серый</span></button><button type="button" data-zoom="assets/maxi/c5.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c5.jpg" alt="Бизидом Макси — Нежно серый" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgb(181,181,181)"></span>Нежно серый</span></button><button type="button" data-zoom="assets/maxi/c6.jpg" class="group text-left"><span class="block aspect-square rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/c6.jpg" alt="Бизидом Макси — Нежно розовый" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"></span><span class="mt-2 flex items-center gap-2 text-sm font-semibold"><span class="h-3 w-3 rounded-full border border-black/10" style="background:rgba(255,25,25,0.25)"></span>Нежно розовый</span></button></div>
+
+        <h3 class="mt-12 font-display font-extrabold text-[22px] leading-tight">За 8 лет работы мы получили более 13 тысяч положительных отзывов</h3>
+        <p class="mt-2 text-sm text-[#5F6670]">Видео от наших покупателей — нажмите, чтобы посмотреть</p>
+        <div class="mt-5 -mx-4 px-4 flex gap-3 overflow-x-auto snap-x no-scrollbar"><button type="button" data-yt="qvNiAfNU-PE" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/qvNiAfNU-PE/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="F0n4QrY0Grc" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/F0n4QrY0Grc/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="2tv0on96JCo" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/2tv0on96JCo/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="l55tupLYKT4" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/l55tupLYKT4/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="BNb6YgbnEMc" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/BNb6YgbnEMc/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="Ml-DohZqBz0" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/Ml-DohZqBz0/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="cDbQkMn_nqY" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/cDbQkMn_nqY/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="TJ9kyOMqdCE" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/TJ9kyOMqdCE/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="gadlIDzv114" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/gadlIDzv114/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="oTw38BxN45U" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/oTw38BxN45U/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="7dKQZUWQq90" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/7dKQZUWQq90/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="Rr7fvxTrSIc" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/Rr7fvxTrSIc/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="Leje3k7i4wI" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/Leje3k7i4wI/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="VHHjhRJKV8I" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/VHHjhRJKV8I/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button><button type="button" data-yt="dIXS-jsHfs8" class="group relative w-[260px] aspect-video snap-start rounded-2xl overflow-hidden bg-[#1C1C1C] shrink-0" aria-label="Смотреть видео"><img src="https://i.ytimg.com/vi/dIXS-jsHfs8/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-300"><span class="absolute inset-0 flex items-center justify-center"><span class="h-12 w-12 rounded-full bg-white/95 text-[#E63329] flex items-center justify-center shadow-lg group-hover:scale-110 transition"><i class="fa-solid fa-play ml-0.5"></i></span></span></button></div>
+
+        <p class="mt-10 text-[16px] leading-relaxed text-[#3D434A]">Каждая из четырех сторон БизиДома Макси и его крыша – самостоятельное игровое поле, насыщенное развлекательными и развивающими элементами. Например, шестеренки, движущиеся игрушки в виде птичек, вертикальный лабиринт, в который нужно забрасывать монетки, стучащий дятел, привлекают внимание своей яркостью и помогут для развития мелкой моторики детских ручек, памяти, сообразительности и логики. Домик приучит Вашего малыша к самостоятельности и усидчивости. Первый, и второй этаж домика открываются, и туда можно положить множество разных игрушек. Детки постоянно придумывают всё новые и новые игры с БизиДомом Макси. А вот знакомство с цифрами в виде монеток, часиками и сортером помогает развить интерес к счёту и изучению геометрических фигур.</p>
+        <div class="mt-6 grid grid-cols-1 gap-4">
+          <div class="rounded-[20px] bg-[#EAF0FA] p-5 flex gap-4"><span class="h-11 w-11 shrink-0 rounded-2xl bg-white text-[#F7C52D] flex items-center justify-center"><i class="fa-solid fa-lightbulb text-lg"></i></span><p class="text-[15px] leading-relaxed">Ах да! Не забудьте добавить к домику подсветку, и тогда любимый домик превратится в ночник, под который можно рассказывать малышу самые добрые сказки про его жителей.</p></div>
+          <div class="rounded-[20px] bg-[#EAF6EB] p-5 flex gap-4"><span class="h-11 w-11 shrink-0 rounded-2xl bg-white text-[#3B9C40] flex items-center justify-center"><i class="fa-solid fa-signature text-lg"></i></span><p class="text-[15px] leading-relaxed">Ну и табличка с гравировкой имени ребёнка станет памятным украшением Домика!</p></div>
+        </div>
+
+        <h3 class="mt-12 font-display font-extrabold text-[22px] leading-tight">В БизиДоме Макси Ваш малыш найдет более 43 развивающих игр</h3>
+        <ul class="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 text-[15px] leading-snug"><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>счеты и большой лабиринт для развития логики и пространственного мышления</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>шнуровка, которая развивает моторику, а значит, речь малыша</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>вкладыши для изучения форм и цвета</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>дятел, которым очень нравится стучать по дереву и приглашать к игре</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>2 вида запоминашек для развития памяти малыша</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>открывающийся почтовый ящик, в котором живёт милый медвежонок</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>лабиринт с монетами, от которого просто невозможно оторваться не только детям, но и взрослым</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>открывающиеся дверцы с разными типами замочков</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>деревянная розетка с вилкой</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>монетки с фруктами и овощами</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>интересная система шестерёнок для изучения времен года</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>игра “покорми курочек”</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>Ёжик с фруктами и овощами</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>Банка для монеток</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-[#4CAF50] mt-1"></i><span>и это еще не все развивающие элементы!</span></li></ul>
+
+        <a href="#" class="mt-8 flex items-center gap-4 rounded-[20px] border border-[#E9ECEF] p-5 hover:border-[#2B5BAA] transition"><span class="h-11 w-11 shrink-0 rounded-2xl bg-[#1C1C1C] text-white flex items-center justify-center"><i class="fa-solid fa-newspaper"></i></span><span class="flex-1 font-semibold">Посмотрите большое интервью на Onliner.by про нашу мастерскую.</span><i class="fa-solid fa-arrow-right text-[#2B5BAA]"></i></a>
+
+        <p class="mt-8 text-[16px] leading-relaxed text-[#3D434A]">БизиДом Макси – это максимально насыщенный развивающими элементами комплекс, который полностью заменит любые другие развивающие игрушки, а еще сохранит порядок в комнате и надолго увлечет вашего малыша!</p>
+        <p class="mt-4 text-[16px] leading-relaxed text-[#3D434A]"><b>Дизайн:</b> яркий бизидом с акцентом на ключевые цвета, которые легче и быстрее воспринимаются детским зрением, – желтый, синий, зеленый и красный.</p>
+        <p class="mt-4 text-[16px] leading-relaxed text-[#3D434A]"><b>Кому покупают:</b> малышам от 1 года до 5 лет.</p>
+
+        <h3 class="mt-12 font-display font-extrabold text-[22px] leading-tight">Что Вас может обеспокоить, но напрасно</h3>
+        <div class="mt-5 space-y-3"><details class="group rounded-2xl border border-[#E9ECEF] bg-white px-5 py-4" open><summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between gap-4 font-semibold">БизиДом совсем для малышей, насколько безопасны материалы?<i class="fa-solid fa-plus text-[#2B5BAA] transition group-open:rotate-45"></i></summary><p class="mt-3 text-[15px] leading-relaxed text-[#5F6670]">Мы используем берёзовую шлифованную фанеру, а также абсолютно безопасные акриловые краски на водной основе. Чтобы Домик был идеально гладким и безопасным для ручек малыша, все детали изделия мы обрабатываем тщательной двойной шлифовкой, поэтому занозы, зацепки, острые углы и элементы исключены. Можете быть уверены: мы делаем, как для себя – качественно, безопасно и с любовью.
+
+</p></details><details class="group rounded-2xl border border-[#E9ECEF] bg-white px-5 py-4" ><summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between gap-4 font-semibold">Как собрать домик, вдруг это займет часы?<i class="fa-solid fa-plus text-[#2B5BAA] transition group-open:rotate-45"></i></summary><p class="mt-3 text-[15px] leading-relaxed text-[#5F6670]">Не волнуйтесь, папы и мамы! Домик приедет к Вам в собранном виде, а значит, что не придется самостоятельно собирать, крепить и отвечать за качество сборки. Все хлопоты берем на себя!</p></details><details class="group rounded-2xl border border-[#E9ECEF] bg-white px-5 py-4" ><summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between gap-4 font-semibold">А вдруг БизиДом надоест ребенку за 2 дня и останется пылиться в комнате?<i class="fa-solid fa-plus text-[#2B5BAA] transition group-open:rotate-45"></i></summary><p class="mt-3 text-[15px] leading-relaxed text-[#5F6670]">Мы не просто уверены, мы проверили на тысяче своих довольных заказчиков: домик станет центром притяжения для ребёнка. Ведь в одной игрушке малыш сможет воплотить множество игровых фантазий, а также избавит маму и папу от покупки других мелких игрушек, которые чаще загромождают комнату, чем дарят радость.Только представьте: игрушка одна, а ребенок занят ей часами, пока мама отдыхает и спокойно допивает горячий ароматный чай. Нашими игрушками играют долго и передают по наследству.</p></details></div>
+        <p class="mt-6 text-sm leading-relaxed text-[#5F6670]">*Подсветка и именная табличка – дополнительные элементы БизиДомика Макси, которые сделают игрушку еще более увлекательной. Они не значительно удорожают покупку, но добавляют ей изюминку и индивидуальность. Не забудьте указать подсветку и именную табличку при заказе.</p>
+      <div class="mt-10 rounded-[24px] border border-[#E9ECEF] p-5">
+        <h3 class="font-display font-extrabold text-xl">Характеристики</h3>
+        <div class="mt-2"><div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-ruler-combined text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Размеры</span><span class="text-sm font-semibold">38 × 38 × 50 см (Д/Ш/В)</span></div>
+<div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-weight-hanging text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Вес</span><span class="text-sm font-semibold">4,5 кг</span></div>
+<div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-tree text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Материал</span><span class="text-sm font-semibold">Берёзовая шлифованная фанера</span></div>
+<div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-child-reaching text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Возраст</span><span class="text-sm font-semibold">От 1 года до 5 лет</span></div>
+<div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-shapes text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Элементов</span><span class="text-sm font-semibold">Более 43 развивающих игр</span></div>
+<div class="flex items-start gap-3 py-3 border-b border-[#F1F3F5] last:border-0"><i class="fa-solid fa-box-open text-[#2B5BAA] w-5 mt-0.5"></i><span class="text-sm text-[#5F6670] w-24 shrink-0">Сборка</span><span class="text-sm font-semibold">Приезжает в собранном виде</span></div></div>
+      </div>
+    </div>
+    <div data-tab-panel="reviews" role="tabpanel" class="hidden">
+      <div class="rounded-[24px] bg-[#F8F9FA] p-6">
+          <div class="flex items-end gap-3"><span class="font-display font-black text-[56px] leading-none">5,0</span><div class="pb-1.5"><div class="text-[#F7C52D]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="text-sm text-[#5F6670] mt-0.5">17 отзывов</div></div></div>
+          <div class="mt-5 space-y-2"><div class="flex items-center gap-3 text-sm"><span class="w-3 text-[#5F6670]">5</span><i class="fa-solid fa-star text-[#F7C52D] text-xs"></i><span class="flex-1 h-2 rounded-full bg-[#E9ECEF] overflow-hidden"><span class="block h-full bg-[#F7C52D]" style="width:100%"></span></span><span class="w-6 text-right text-[#5F6670]">17</span></div><div class="flex items-center gap-3 text-sm"><span class="w-3 text-[#5F6670]">4</span><i class="fa-solid fa-star text-[#F7C52D] text-xs"></i><span class="flex-1 h-2 rounded-full bg-[#E9ECEF] overflow-hidden"><span class="block h-full bg-[#F7C52D]" style="width:0%"></span></span><span class="w-6 text-right text-[#5F6670]">0</span></div><div class="flex items-center gap-3 text-sm"><span class="w-3 text-[#5F6670]">3</span><i class="fa-solid fa-star text-[#F7C52D] text-xs"></i><span class="flex-1 h-2 rounded-full bg-[#E9ECEF] overflow-hidden"><span class="block h-full bg-[#F7C52D]" style="width:0%"></span></span><span class="w-6 text-right text-[#5F6670]">0</span></div><div class="flex items-center gap-3 text-sm"><span class="w-3 text-[#5F6670]">2</span><i class="fa-solid fa-star text-[#F7C52D] text-xs"></i><span class="flex-1 h-2 rounded-full bg-[#E9ECEF] overflow-hidden"><span class="block h-full bg-[#F7C52D]" style="width:0%"></span></span><span class="w-6 text-right text-[#5F6670]">0</span></div><div class="flex items-center gap-3 text-sm"><span class="w-3 text-[#5F6670]">1</span><i class="fa-solid fa-star text-[#F7C52D] text-xs"></i><span class="flex-1 h-2 rounded-full bg-[#E9ECEF] overflow-hidden"><span class="block h-full bg-[#F7C52D]" style="width:0%"></span></span><span class="w-6 text-right text-[#5F6670]">0</span></div></div>
+          <p class="mt-5 text-sm leading-relaxed text-[#5F6670]">За 8 лет работы мы получили более 13 тысяч положительных отзывов</p>
+        </div>
+        <div class="mt-5 space-y-3">
+        <article class="bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#2B5BAA] text-white font-bold flex items-center justify-center shrink-0">М</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Марина</div><div class="text-xs text-[#5F6670]">18 января, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый вечер! Получили сегодня наш бизидом! Это лучшее приобретение!!! Малышу 8 месяцев — он от него не отходит!!! Когда увидел — восторг и явный интерес! За сегодня опробовали только одну сторону) Что говорить про ребенка.ю если я сама играла с ним. Спасибо большое за ваш труд!!! Это дорогого стоит!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article class="bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#E63329] text-white font-bold flex items-center justify-center shrink-0">Р</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Роман</div><div class="text-xs text-[#5F6670]">26 января, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый вечер! Получил ваш домик, очень классный! Пойдёт как подарок. Спасибо Вам большое!!! Очень довольны заказом!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article class="bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#F7C52D] text-[#1C1C1C] font-bold flex items-center justify-center shrink-0">К</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Кристина</div><div class="text-xs text-[#5F6670]">29 января, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый вечер. Домик приехал. Спасибо, что сделано с душой. Он такой красивый, еще лучше чем на фотографии не ожидали, что он настолько большой. Наша дочка в восторге, еще раз спасибо!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#4CAF50] text-white font-bold flex items-center justify-center shrink-0">А</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Анна</div><div class="text-xs text-[#5F6670]">4 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Здравствуйте! Домик получили, спасибо большое за вашу работу, домик просто супер! Ребенок счастлив, столько дел тут уже вокруг домика)) Спасибо большое!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#2B5BAA] text-white font-bold flex items-center justify-center shrink-0">Н</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Нина</div><div class="text-xs text-[#5F6670]">5 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый день, огромное вам спасибо за ваш труд и доставление радости и счастья деткам. Подарок всем очень понравился, у внуков уже несколько дней это главная игрушка в доме, здоровья вам, процветания и побольше новых идей.</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#E63329] text-white font-bold flex items-center justify-center shrink-0">К</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Ксения</div><div class="text-xs text-[#5F6670]">7 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый день! Наконец-то ребенок получил свой подарок. сказать что она довольна — ничего не сказать!!! просто невероятная работа, спасибо вам большое!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#F7C52D] text-[#1C1C1C] font-bold flex items-center justify-center shrink-0">Е</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Екатерина</div><div class="text-xs text-[#5F6670]">9 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Спасибо большое за домик, нам очень понравился, ребенка невозможно отвлечь от него (хотя это и не нужно)))) очень классное качество! Супер)</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#4CAF50] text-white font-bold flex items-center justify-center shrink-0">А</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Аня</div><div class="text-xs text-[#5F6670]">11 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Подарок от всех наших бабушек и дедушек))) Сказать, что мы были в восторге, это ничего не сказать. А-фи-ге-нно! Домик просто космос. Берите, даже не думайте, никакой валдберис и рядом не стоял.</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#2B5BAA] text-white font-bold flex items-center justify-center shrink-0">Т</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Татьяна</div><div class="text-xs text-[#5F6670]">14 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Домик пришел, спасибо большое. Я очень редко радуюсь покупкам, но он выше всей похвалы, спасибо за ваши чудесные руки и терпение!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#E63329] text-white font-bold flex items-center justify-center shrink-0">О</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Ольга</div><div class="text-xs text-[#5F6670]">21 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Спасибо огромное за чудо домик!!! Я в восторге, внучке можей тоже понравился домик. Хвала мастерам-умельцам!!! Буду вас рекомендовать своим знакомым и коллегам!!!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#F7C52D] text-[#1C1C1C] font-bold flex items-center justify-center shrink-0">Н</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Наталья</div><div class="text-xs text-[#5F6670]">24 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый вечер… наконец-то добрались руки до дома, распечатали посылку и остались ОЧЕНЬ!! довольны!!! Домик просто супер!!! Доставлен в целости и сохранности, не стыдно подарить внуку!!! Спасибо Вам огромное!!! Вы делаете очень хорошее дело для наших детей!!!! Наши дети- наше сокровище, наше будущее, которое Вы стремитесь сделать лучше!!!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#4CAF50] text-white font-bold flex items-center justify-center shrink-0">Д</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Диана</div><div class="text-xs text-[#5F6670]">28 февраля, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый день! Мы с ребенком в полнейшем восторге от Вашего творения! Дни идут, а интерес не ослабевает! Может крутить и ковырять все в домике ооочень долго) И делаем это с таким серьёзным видом, умора!))) В общем, спасибо Вам огромнейшее за Ваш труд!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#2B5BAA] text-white font-bold flex items-center justify-center shrink-0">С</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Светлана</div><div class="text-xs text-[#5F6670]">3 марта, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Спасибо Вам большое за такую оперативную доставку и за подарочки. Дарили ребенку на 1 год и он был в восторге. Весь вечер был рядом с ним и все что-то крутил, доставал. Спасибо, что дарите эти эмоции. Это бесценно! Удачи Вам!!!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#E63329] text-white font-bold flex items-center justify-center shrink-0">А</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Александра</div><div class="text-xs text-[#5F6670]">8 марта, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Спасибо Вам за красоту, которую Вы делаете! Домик просто супер, доставка тоже, всё аккуратно и надёжно упаковано! Имениннику ооочень понравилось, спасибо вам еще раз за ваши прекрасные работы и ваш труд, вы приносите детям радость!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#F7C52D] text-[#1C1C1C] font-bold flex items-center justify-center shrink-0">А</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Александра</div><div class="text-xs text-[#5F6670]">9 марта, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Шикарный домик! Дети не отлипают!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#4CAF50] text-white font-bold flex items-center justify-center shrink-0">Д</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">Дарья</div><div class="text-xs text-[#5F6670]">26 августа, 2024</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Добрый день, огромное спасибо вам за вашу работу. Доставка в кротчайшие сроки, вежливый персонал. А Бизидом это просто находка для родителей. Ребёнок был в полном восторге 1.5 часа непрерывного изучения домика.<br>Чуть подростем обязательно закажем кукольный домик.</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        <article data-review-extra class="hidden bg-white rounded-[20px] border border-[#E9ECEF] p-5">
+          <div class="flex items-center gap-3">
+            <span class="h-11 w-11 rounded-full bg-[#2B5BAA] text-white font-bold flex items-center justify-center shrink-0">S</span>
+            <div class="flex-1 min-w-0"><div class="font-semibold">sergey_makey</div><div class="text-xs text-[#5F6670]">18 апреля, 2025</div></div>
+            <span class="text-[#F7C52D] text-xs whitespace-nowrap" aria-label="Оценка 5 из 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="mt-3 text-[15px] leading-relaxed text-[#3D434A]">Дзень добры! У рэшце рэшт прыехаў выдатны домік! Вельмі прыемна, што такі цуд вырабляюць у нас, у Беларусі. Спадзяюся, што ўнуку прыйдзецца даспадобы такі падарунак. А пакуль сам гуляю, не магу нагуляцца (стары — што малы).<br>       Чаму ў пачатку напісаў «у рэшце рэшт»? Таму што БелПошта ледзь не сапсавала ўраджанні ад Вашай выбітнай працы, тры разы пераносячы дастаўку (то не паспелі, то машіна зламалася). Карацей кажучы не панос, дык залатуха… Можа ёсць сенс знайсці іншага дастаўшчыка?<br>       А за Вашу працу — вялікі дзякуй!!!</p>
+          <div class="mt-3 text-xs font-semibold text-[#4CAF50] flex items-center gap-1.5"><i class="fa-solid fa-circle-check"></i>Покупатель · Бизидом Макси</div>
+        </article>
+        </div>
+        <button type="button" data-more-reviews class="mt-5 w-full h-12 rounded-full border-2 border-[#2B5BAA] text-[#2B5BAA] font-semibold hover:bg-[#EAF0FA]">Показать ещё 14 отзывов</button>
+    </div>
+    <div data-tab-panel="delivery" role="tabpanel" class="hidden">
+      <div class="grid grid-cols-1 gap-4">
+          <div class="rounded-[24px] border border-[#E9ECEF] p-6">
+            <div class="flex items-center gap-3"><span class="h-11 w-11 rounded-2xl bg-[#EAF6EB] text-[#3B9C40] flex items-center justify-center"><i class="fa-solid fa-truck"></i></span><h3 class="font-display font-extrabold text-xl">Доставка по Беларуси</h3></div>
+            <div class="mt-5 flex items-center justify-between py-3 border-b border-[#F1F3F5]"><span class="text-[#5F6670]">До отделения почты</span><span class="font-bold text-[#4CAF50]">БЕСПЛАТНО</span></div>
+            <div class="flex items-center justify-between py-3"><span class="text-[#5F6670]">До дверей квартиры</span><span class="font-bold">20 бел. руб</span></div>
+          </div>
+          <div class="rounded-[24px] border border-[#E9ECEF] p-6">
+            <div class="flex items-center gap-3"><span class="h-11 w-11 rounded-2xl bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center"><i class="fa-solid fa-earth-europe"></i></span><h3 class="font-display font-extrabold text-xl">Доставка в РФ и другие страны мира</h3></div>
+            <p class="mt-4 text-[15px] leading-relaxed text-[#5F6670]">Стоимость доставки в страны СНГ и мира рассчитывается индивидуально. Для этого обратитесь к менеджеру в любом удобном мессенджере или по телефону.</p>
+            <p class="mt-3 text-[15px] leading-relaxed text-[#5F6670]">Все заказы за пределы Республики Беларусь отправляются после 100% предоплаты.</p>
+          </div>
+          <div class="rounded-[24px] border border-[#E9ECEF] p-6">
+            <div class="flex items-center gap-3"><span class="h-11 w-11 rounded-2xl bg-[#FEF6DC] text-[#C99A08] flex items-center justify-center"><i class="fa-solid fa-wallet"></i></span><h3 class="font-display font-extrabold text-xl">Оплата</h3></div>
+            <p class="mt-4 text-[15px] leading-relaxed text-[#5F6670]">Оплата возможна либо при получении курьеру, либо картой онлайн (после подтверждения заказа менеджером).</p>
+          </div>
+          <div class="rounded-[24px] bg-[#2B5BAA] text-white p-6">
+            <div class="flex items-center gap-3"><span class="h-11 w-11 rounded-2xl bg-white/15 text-[#F7C52D] flex items-center justify-center"><i class="fa-solid fa-credit-card"></i></span><h3 class="font-display font-extrabold text-xl">Рассрочка под 0% на 4 месяца</h3></div>
+            <p class="mt-4 text-[15px] leading-relaxed text-white/85">Купить игрушку со скидкой можно в рассрочку и без переплат. Для этого просто добавьте товар в корзину, а при оформлении заказа выберите способ оплаты «Оплата частями».</p>
+          </div>
+        </div>
+    </div>
+    <div data-tab-panel="cert" role="tabpanel" class="hidden">
+      <div class="grid grid-cols-1 gap-4"><button type="button" data-zoom="assets/maxi/cert.jpg" class="group text-left rounded-[24px] border border-[#E9ECEF] p-4 hover:shadow-[0_20px_40px_-20px_rgba(28,28,28,0.3)] transition"><span class="block aspect-[566/800] rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/cert.jpg" alt="Сертификат соответствия требованиям технического регламента ЕЭС" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-300"></span><span class="mt-4 block text-xs font-semibold uppercase tracking-wider text-[#4CAF50]"><i class="fa-solid fa-certificate mr-1"></i>Сертификат качества</span><span class="mt-1 block font-semibold leading-snug">Сертификат соответствия требованиям технического регламента ЕЭС</span></button><button type="button" data-zoom="assets/maxi/cert-kraska.jpg" class="group text-left rounded-[24px] border border-[#E9ECEF] p-4 hover:shadow-[0_20px_40px_-20px_rgba(28,28,28,0.3)] transition"><span class="block aspect-[566/800] rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/cert-kraska.jpg" alt="Акриловая эмаль" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-300"></span><span class="mt-4 block text-xs font-semibold uppercase tracking-wider text-[#4CAF50]"><i class="fa-solid fa-certificate mr-1"></i>Сертификат качества</span><span class="mt-1 block font-semibold leading-snug">Акриловая эмаль</span></button><button type="button" data-zoom="assets/maxi/cert-fanera.jpg" class="group text-left rounded-[24px] border border-[#E9ECEF] p-4 hover:shadow-[0_20px_40px_-20px_rgba(28,28,28,0.3)] transition"><span class="block aspect-[566/800] rounded-2xl overflow-hidden bg-[#F8F9FA]"><img src="assets/maxi/cert-fanera.jpg" alt="Берёзовая фанера" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-300"></span><span class="mt-4 block text-xs font-semibold uppercase tracking-wider text-[#4CAF50]"><i class="fa-solid fa-certificate mr-1"></i>Сертификат качества</span><span class="mt-1 block font-semibold leading-snug">Берёзовая фанера</span></button></div>
+    </div>
+  </div>
+</section>
+
+<section data-design-id="pm-questions-m4n5o6" class="px-4 pb-10">
+  <div class="rounded-[28px] bg-[#2B5BAA] text-white p-6">
+    <h2 class="font-display font-extrabold text-[26px] leading-tight">У Вас остались вопросы?</h2>
+    <p class="mt-3 text-[15px] text-white/85 leading-relaxed">Выбор игрушки для своего ребёнка это действительно важный момент. Мы поможем подобрать подходящий бизиборд для Вашего малыша и ответим на любые вопросы.</p>
+    <p class="mt-2 text-sm text-white/70 leading-relaxed">Вы можете задать любые интересующие вопросы, написав в форме ниже. Либо закажите обратный звонок, оставив поле с вопросом пустым. Мы обязательно перезвоним!</p>
+    <form data-question-form class="mt-6 space-y-3">
+          <input type="text" name="name" required placeholder="Имя" class="w-full h-14 rounded-2xl bg-white px-5 text-[15px] text-[#1C1C1C] outline-none focus:ring-2 focus:ring-[#F7C52D]">
+          <input type="tel" name="phone" required placeholder="Номер телефона" class="w-full h-14 rounded-2xl bg-white px-5 text-[15px] text-[#1C1C1C] outline-none focus:ring-2 focus:ring-[#F7C52D]">
+          <textarea name="question" rows="3" placeholder="Ваш вопрос (можно оставить пустым — перезвоним)" class="w-full h-14 rounded-2xl bg-white px-5 text-[15px] text-[#1C1C1C] outline-none focus:ring-2 focus:ring-[#F7C52D] h-auto py-4 resize-none"></textarea>
+          <button type="submit" class="w-full h-14 rounded-full bg-[#F7C52D] hover:bg-[#F2BB0D] text-[#1C1C1C] font-semibold flex items-center justify-center gap-2">Отправить <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="text-xs leading-relaxed text-white/70">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#" class="underline">политикой конфиденциальности</a></p>
+        </form>
+        <div data-question-ok class="hidden mt-6 rounded-[24px] bg-white/10 p-8 text-center">
+          <span class="mx-auto h-14 w-14 rounded-full bg-[#4CAF50] text-white flex items-center justify-center text-2xl"><i class="fa-solid fa-check"></i></span>
+          <div class="mt-4 font-display font-extrabold text-2xl">Спасибо!</div>
+          <p class="mt-1 text-white/80">Мы обязательно перезвоним.</p>
+        </div>
+    <div class="mt-6 text-sm text-white/70">Или напишите нам в любом из мессенджеров:</div>
+    <div class="mt-3 flex items-center gap-2">
+      <a href="#" class="h-11 w-11 rounded-full bg-white text-[#229ED9] flex items-center justify-center" aria-label="Telegram"><i class="fa-brands fa-telegram text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white text-[#3B9C40] flex items-center justify-center" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white text-[#7360F2] flex items-center justify-center" aria-label="Viber"><i class="fa-brands fa-viber text-lg"></i></a>
+    </div>
+    <a href="#" class="mt-3 block font-display font-extrabold text-xl">+375 (33) 318-18-22</a>
+  </div>
+</section>
+
+<section data-design-id="pm-related-p7q8r9" class="pb-10">
+  <h2 class="px-4 font-display font-extrabold text-[24px]">Вам может понравиться</h2>
+  <div class="mt-4 px-4 flex gap-3 overflow-x-auto snap-x no-scrollbar"><article class="w-[240px] shrink-0 snap-start bg-white rounded-[20px] border border-[#E9ECEF] overflow-hidden">
+        <div class="aspect-[4/3] bg-[#F8F9FA]"><img src="assets/mini.jpg" alt="Бизидомик Мини" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display font-extrabold text-lg">Бизидомик Мини</h3><div class="mt-1 text-xs text-[#5F6670]">1–3 года</div>
+        <div class="mt-3 flex items-center justify-between"><span class="font-display font-black text-xl">120 Br</span><a href="#" class="h-10 px-4 rounded-full bg-[#EAF0FA] text-[#2B5BAA] text-sm font-semibold flex items-center">Подробнее</a></div></div>
+      </article><article class="w-[240px] shrink-0 snap-start bg-white rounded-[20px] border border-[#E9ECEF] overflow-hidden">
+        <div class="aspect-[4/3] bg-[#F8F9FA]"><img src="assets/dollhouse.jpg" alt="Кукольный домик" class="w-full h-full object-cover"></div>
+        <div class="p-4"><h3 class="font-display font-extrabold text-lg">Кукольный домик</h3><div class="mt-1 text-xs text-[#5F6670]">3–10 лет</div>
+        <div class="mt-3 flex items-center justify-between"><span class="font-display font-black text-xl">250 Br</span><a href="#" class="h-10 px-4 rounded-full bg-[#EAF0FA] text-[#2B5BAA] text-sm font-semibold flex items-center">Подробнее</a></div></div>
+      </article></div>
+</section>
+
+<!-- Нижняя панель покупки -->
+<div data-design-id="pm-sticky-buy-s1t2u3" class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] z-30 bg-white/95 backdrop-blur border-t border-[#E9ECEF] px-4 py-3 flex items-center gap-3">
+  <div class="leading-tight"><div class="text-[11px] text-[#5F6670]">Итого</div><div data-total class="font-display font-black text-xl">280 Br</div></div>
+  <button type="button" data-add-to-cart class="flex-1 h-12 rounded-full bg-[#2B5BAA] text-white font-semibold flex items-center justify-center gap-2"><i class="fa-solid fa-basket-shopping"></i>В корзину</button>
+</div>
+
+</main>
+
+<footer data-design-id="m-footer-a7b8c9" class="bg-[#F8F9FA] border-t border-[#E9ECEF] px-4 pt-10 pb-8">
+  <img src="assets/logo.png" alt="KuboToys" class="h-9 w-auto">
+  <p class="mt-3 text-sm leading-relaxed text-[#5F6670]">Семейная мастерская развивающих игрушек из дерева. Сделано в Беларуси с 2017 года.</p>
+  <nav data-design-id="m-footer-nav-d1e2f3" class="mt-6 grid grid-cols-2 gap-y-3 text-sm font-medium">
+    <a href="#">Каталог</a><a href="#">Гарантии</a>
+    <a href="#">Доставка</a><a href="#">О нас</a>
+    <a href="#">Рассрочка</a><a href="#">Сертификаты</a>
+  </nav>
+  <div class="mt-6 pt-6 border-t border-[#E9ECEF]">
+    <a href="#" class="block font-display font-extrabold text-xl">+375 (33) 318-18-22</a>
+    <p class="text-xs text-[#5F6670] mt-1">Ежедневно 9:00–21:00</p>
+    <div class="mt-3 flex gap-2">
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#229ED9] flex items-center justify-center"><i class="fa-brands fa-telegram text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#3B9C40] flex items-center justify-center"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#E63329] flex items-center justify-center"><i class="fa-brands fa-instagram text-lg"></i></a>
+    </div>
+  </div>
+  <div class="mt-6 pt-5 border-t border-[#E9ECEF] text-[11px] leading-relaxed text-[#5F6670]">
+    ©2017–2026 Kubotoys.by<br>ИП Римаренко Павел Валерьевич · УНП 291293260
+  </div>
+</footer>
+
+
+
+</body></html>
