@@ -27,11 +27,16 @@
   </div>
 </header>
 
-<nav data-design-id="m-nav-chips-j1k2l3" class="px-4 py-3 flex gap-2 overflow-x-auto no-scrollbar border-b border-[#E9ECEF] text-sm font-semibold whitespace-nowrap">
-  <a href="#" class="px-4 py-2 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center gap-2"><i class="fa-solid fa-grip text-xs"></i>Каталог</a>
-  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">Доставка и оплата</a>
-  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">Гарантии</a>
-  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">О нас</a>
+<nav data-design-id="m-nav-chips-j1k2l3" class="relative px-4 py-3 flex gap-2 border-b border-[#E9ECEF] text-sm font-semibold whitespace-nowrap bg-white z-10">
+  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF] text-[#1C1C1C]">Каталог</a>
+  <details data-design-id="m-nav-info-dropdown-r4t5y6" class="group">
+    <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer px-4 py-2 rounded-full border border-[#E9ECEF] text-[#1C1C1C]/70 flex items-center gap-1.5 group-open:text-[#2B5BAA] group-open:border-[#2B5BAA]/30">Информация<i class="fa-solid fa-chevron-down text-[9px] transition-transform group-open:rotate-180"></i></summary>
+    <ul class="absolute left-4 right-4 top-full mt-1 bg-white rounded-[10px] shadow-[0_0_3px_rgba(0,0,0,0.15),0_12px_28px_-12px_rgba(28,28,28,0.18)] px-5 py-2">
+      <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Доставка и оплата</a></li>
+      <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Гарантии</a></li>
+      <li><a href="#" class="block py-3 text-[#838383]">Рассрочка</a></li>
+    </ul>
+  </details>
 </nav>
 
 <main data-design-id="m-main-m4n5o6">

@@ -29,11 +29,18 @@
 <header data-design-id="header-main-k7a1b2" class="bg-white border-b border-[#E9ECEF] sticky top-0 z-20">
   <div class="max-w-[1200px] mx-auto h-[84px] flex items-center justify-between">
     <a href="#" class="flex items-center"><img src="assets/logo.png" alt="KuboToys" class="h-11 w-auto"></a>
-    <nav data-design-id="nav-primary-c3d4e5" class="flex items-center gap-1 text-[15px] font-semibold">
-      <a href="#" class="px-4 py-2 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center gap-2"><i class="fa-solid fa-grip text-sm"></i>Каталог</a>
-      <a href="#" class="px-4 py-2 rounded-full hover:bg-[#F8F9FA]">Доставка и оплата</a>
-      <a href="#" class="px-4 py-2 rounded-full hover:bg-[#F8F9FA]">Гарантии</a>
-      <a href="#" class="px-4 py-2 rounded-full hover:bg-[#F8F9FA]">О нас</a>
+    <nav data-design-id="nav-primary-c3d4e5" class="flex items-center gap-8 text-[15px] font-semibold">
+      <a href="#" class="py-2 text-[#1C1C1C] hover:text-[#2B5BAA] transition-colors">Каталог</a>
+      <div data-design-id="nav-info-dropdown-q1w2e3" class="relative group">
+        <a href="#" class="py-2 flex items-center gap-1.5 text-[#1C1C1C]/70 group-hover:text-[#2B5BAA] group-focus-within:text-[#2B5BAA] transition-colors" aria-haspopup="true">Информация<i class="fa-solid fa-chevron-down text-[9px] transition-transform group-hover:rotate-180"></i></a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition-all duration-150 z-30">
+          <ul class="min-w-[220px] bg-white rounded-[10px] shadow-[0_0_3px_rgba(0,0,0,0.15),0_12px_28px_-12px_rgba(28,28,28,0.18)] px-5 py-3 text-sm font-semibold">
+            <li><a href="#" class="block py-2 text-[#838383] hover:text-[#2B5BAA] transition-colors">Доставка и оплата</a></li>
+            <li><a href="#" class="block py-2 text-[#838383] hover:text-[#2B5BAA] transition-colors">Гарантии</a></li>
+            <li><a href="#" class="block py-2 text-[#838383] hover:text-[#2B5BAA] transition-colors">Рассрочка</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="flex items-center gap-5">
       <div class="text-right leading-tight">
