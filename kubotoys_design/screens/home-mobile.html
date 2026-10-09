@@ -23,21 +23,24 @@
   <div class="flex items-center gap-2">
     <a href="#" class="h-10 w-10 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center" aria-label="Позвонить"><i class="fa-solid fa-phone"></i></a>
     <button data-design-id="m-cart-btn-d4e5f6" type="button" class="relative h-10 w-10 rounded-full bg-[#1C1C1C] text-white flex items-center justify-center" aria-label="Корзина"><i class="fa-solid fa-basket-shopping"></i><span class="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#E63329] text-[10px] font-bold flex items-center justify-center border-2 border-white">1</span></button>
-    <button data-design-id="m-menu-btn-g7h8i9" type="button" class="h-10 w-10 rounded-full border border-[#E9ECEF] flex items-center justify-center" aria-label="Меню"><i class="fa-solid fa-bars"></i></button>
+    <details data-design-id="m-burger-menu-g7h8i9" class="group/burger">
+      <summary data-design-id="m-menu-btn-g7h8i9" class="list-none [&::-webkit-details-marker]:hidden cursor-pointer h-10 w-10 rounded-full border border-[#E9ECEF] flex items-center justify-center group-open/burger:bg-[#EAF0FA] group-open/burger:text-[#2B5BAA] group-open/burger:border-transparent" aria-label="Меню">
+        <i class="fa-solid fa-bars group-open/burger:hidden"></i><i class="fa-solid fa-xmark hidden group-open/burger:inline"></i>
+      </summary>
+      <nav data-design-id="m-burger-panel-j1k2l3" class="absolute left-0 right-0 top-full bg-white border-b border-[#E9ECEF] shadow-[0_16px_32px_-16px_rgba(28,28,28,0.25)] px-4 pt-2 pb-4 text-[15px] font-semibold">
+        <a href="#" class="flex items-center justify-between py-4 border-b border-[#F1F3F5] text-[#1C1C1C]">Каталог<i class="fa-solid fa-chevron-right text-[11px] text-[#ADB5BD]"></i></a>
+        <details data-design-id="m-nav-info-dropdown-r4t5y6" class="group/info" open>
+          <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between py-4 text-[#1C1C1C] group-open/info:text-[#2B5BAA]">Информация<i class="fa-solid fa-chevron-down text-[11px] transition-transform group-open/info:rotate-180"></i></summary>
+          <ul class="pl-4 pb-1 text-sm">
+            <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Доставка и оплата</a></li>
+            <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Гарантии</a></li>
+            <li><a href="#" class="block py-3 text-[#838383]">Рассрочка</a></li>
+          </ul>
+        </details>
+      </nav>
+    </details>
   </div>
 </header>
-
-<nav data-design-id="m-nav-chips-j1k2l3" class="relative px-4 py-3 flex gap-2 border-b border-[#E9ECEF] text-sm font-semibold whitespace-nowrap bg-white z-10">
-  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF] text-[#1C1C1C]">Каталог</a>
-  <details data-design-id="m-nav-info-dropdown-r4t5y6" class="group">
-    <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer px-4 py-2 rounded-full border border-[#E9ECEF] text-[#1C1C1C]/70 flex items-center gap-1.5 group-open:text-[#2B5BAA] group-open:border-[#2B5BAA]/30">Информация<i class="fa-solid fa-chevron-down text-[9px] transition-transform group-open:rotate-180"></i></summary>
-    <ul class="absolute left-4 right-4 top-full mt-1 bg-white rounded-[10px] shadow-[0_0_3px_rgba(0,0,0,0.15),0_12px_28px_-12px_rgba(28,28,28,0.18)] px-5 py-2">
-      <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Доставка и оплата</a></li>
-      <li><a href="#" class="block py-3 text-[#838383] border-b border-[#F1F3F5]">Гарантии</a></li>
-      <li><a href="#" class="block py-3 text-[#838383]">Рассрочка</a></li>
-    </ul>
-  </details>
-</nav>
 
 <main data-design-id="m-main-m4n5o6">
 
