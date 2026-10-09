@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "screens": [
+    {"screen_id": "home", "frame_kind": "desktop", "label": "Главная — десктоп"},
+    {"screen_id": "home-mobile", "frame_kind": "phone", "label": "Главная — мобильная"}
+  ]
+}

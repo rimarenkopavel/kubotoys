@@ -1,0 +1,245 @@
+<html lang="ru" style=""><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KuboToys — мобильная главная</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@700;800;900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+ tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Nunito','system-ui','sans-serif'] } } } }
+</script>
+<style>.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-right-1{right:-0.25rem}.-top-1{top:-0.25rem}.bottom-3{bottom:0.75rem}.left-3{left:0.75rem}.right-3{right:0.75rem}.top-0{top:0px}.top-3{top:0.75rem}.z-10{z-index:10}.z-20{z-index:20}.mx-3{margin-left:0.75rem;margin-right:0.75rem}.-mt-8{margin-top:-2rem}.mb-3{margin-bottom:0.75rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.aspect-\[4\/3\]{aspect-ratio:4/3}.aspect-square{aspect-ratio:1 / 1}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-5{height:1.25rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[240px\]{height:240px}.h-\[260px\]{height:260px}.h-full{height:100%}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-9{width:2.25rem}.w-\[240px\]{width:240px}.w-\[260px\]{width:260px}.w-\[300px\]{width:300px}.w-\[390px\]{width:390px}.w-auto{width:auto}.w-full{width:100%}.shrink-0{flex-shrink:0}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.snap-start{scroll-snap-align:start}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:0.125rem}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-y-3{row-gap:0.75rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-\[20px\]{border-radius:20px}.rounded-\[24px\]{border-radius:24px}.rounded-\[28px\]{border-radius:28px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[\#2B5BAA\]{--tw-border-opacity:1;border-color:rgb(43 91 170 / var(--tw-border-opacity, 1))}.border-\[\#E9ECEF\]{--tw-border-opacity:1;border-color:rgb(233 236 239 / var(--tw-border-opacity, 1))}.border-\[\#F1E3B8\]{--tw-border-opacity:1;border-color:rgb(241 227 184 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.bg-\[\#1C1C1C\]{--tw-bg-opacity:1;background-color:rgb(28 28 28 / var(--tw-bg-opacity, 1))}.bg-\[\#2B5BAA\]{--tw-bg-opacity:1;background-color:rgb(43 91 170 / var(--tw-bg-opacity, 1))}.bg-\[\#4CAF50\]{--tw-bg-opacity:1;background-color:rgb(76 175 80 / var(--tw-bg-opacity, 1))}.bg-\[\#C9CED4\]{--tw-bg-opacity:1;background-color:rgb(201 206 212 / var(--tw-bg-opacity, 1))}.bg-\[\#E63329\]{--tw-bg-opacity:1;background-color:rgb(230 51 41 / var(--tw-bg-opacity, 1))}.bg-\[\#EAF0FA\]{--tw-bg-opacity:1;background-color:rgb(234 240 250 / var(--tw-bg-opacity, 1))}.bg-\[\#EAF6EB\]{--tw-bg-opacity:1;background-color:rgb(234 246 235 / var(--tw-bg-opacity, 1))}.bg-\[\#F7C52D\]{--tw-bg-opacity:1;background-color:rgb(247 197 45 / var(--tw-bg-opacity, 1))}.bg-\[\#F8F9FA\]{--tw-bg-opacity:1;background-color:rgb(248 249 250 / var(--tw-bg-opacity, 1))}.bg-\[\#FDECEB\]{--tw-bg-opacity:1;background-color:rgb(253 236 235 / var(--tw-bg-opacity, 1))}.bg-\[\#FEF6DC\]{--tw-bg-opacity:1;background-color:rgb(254 246 220 / var(--tw-bg-opacity, 1))}.bg-\[\#FFF9E8\]{--tw-bg-opacity:1;background-color:rgb(255 249 232 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-14{padding-bottom:3.5rem}.pb-8{padding-bottom:2rem}.pr-4{padding-right:1rem}.pt-10{padding-top:2.5rem}.pt-14{padding-top:3.5rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-7{padding-top:1.75rem}.text-center{text-align:center}.font-display{font-family:Nunito, system-ui, sans-serif}.font-sans{font-family:Inter, system-ui, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[15px\]{font-size:15px}.text-\[22px\]{font-size:22px}.text-\[26px\]{font-size:26px}.text-\[28px\]{font-size:28px}.text-\[34px\]{font-size:34px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.08\]{line-height:1.08}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.06em\]{letter-spacing:0.06em}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[\#1C1C1C\]{--tw-text-opacity:1;color:rgb(28 28 28 / var(--tw-text-opacity, 1))}.text-\[\#229ED9\]{--tw-text-opacity:1;color:rgb(34 158 217 / var(--tw-text-opacity, 1))}.text-\[\#2B5BAA\]{--tw-text-opacity:1;color:rgb(43 91 170 / var(--tw-text-opacity, 1))}.text-\[\#3B9C40\]{--tw-text-opacity:1;color:rgb(59 156 64 / var(--tw-text-opacity, 1))}.text-\[\#3F454D\]{--tw-text-opacity:1;color:rgb(63 69 77 / var(--tw-text-opacity, 1))}.text-\[\#4CAF50\]{--tw-text-opacity:1;color:rgb(76 175 80 / var(--tw-text-opacity, 1))}.text-\[\#5F6670\]{--tw-text-opacity:1;color:rgb(95 102 112 / var(--tw-text-opacity, 1))}.text-\[\#C99A08\]{--tw-text-opacity:1;color:rgb(201 154 8 / var(--tw-text-opacity, 1))}.text-\[\#E63329\]{--tw-text-opacity:1;color:rgb(230 51 41 / var(--tw-text-opacity, 1))}.text-\[\#F7C52D\]{--tw-text-opacity:1;color:rgb(247 197 45 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/80{color:rgb(255 255 255 / 0.8)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0_10px_24px_-16px_rgba\(28\2c 28\2c 28\2c 0\.2\)\]{--tw-shadow:0 10px 24px -16px rgba(28,28,28,0.2);--tw-shadow-colored:0 10px 24px -16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_10px_24px_-8px_rgba\(43\2c 91\2c 170\2c 0\.55\)\]{--tw-shadow:0 10px 24px -8px rgba(43,91,170,0.55);--tw-shadow-colored:0 10px 24px -8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_16px_32px_-20px_rgba\(28\2c 28\2c 28\2c 0\.3\)\]{--tw-shadow:0 16px 32px -20px rgba(28,28,28,0.3);--tw-shadow-colored:0 16px 32px -20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_8px_24px_-16px_rgba\(28\2c 28\2c 28\2c 0\.2\)\]{--tw-shadow:0 8px 24px -16px rgba(28,28,28,0.2);--tw-shadow-colored:0 8px 24px -16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}</style></head>
+<body class="w-[390px] bg-white text-[#1C1C1C] font-sans antialiased" style="">
+
+<div class="bg-[#2B5BAA] text-white text-xs h-9 flex items-center justify-center gap-2">
+  <i class="fa-solid fa-truck-fast text-[#F7C52D]"></i>Бесплатная доставка по Беларуси
+</div>
+
+<header data-design-id="m-header-a1b2c3" class="bg-white border-b border-[#E9ECEF] h-16 px-4 flex items-center justify-between sticky top-0 z-20">
+  <a href="#"><img src="assets/logo.png" alt="KuboToys" class="h-8 w-auto"></a>
+  <div class="flex items-center gap-2">
+    <a href="#" class="h-10 w-10 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center" aria-label="Позвонить"><i class="fa-solid fa-phone"></i></a>
+    <button data-design-id="m-cart-btn-d4e5f6" type="button" class="relative h-10 w-10 rounded-full bg-[#1C1C1C] text-white flex items-center justify-center" aria-label="Корзина"><i class="fa-solid fa-basket-shopping"></i><span class="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#E63329] text-[10px] font-bold flex items-center justify-center border-2 border-white">1</span></button>
+    <button data-design-id="m-menu-btn-g7h8i9" type="button" class="h-10 w-10 rounded-full border border-[#E9ECEF] flex items-center justify-center" aria-label="Меню"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<nav data-design-id="m-nav-chips-j1k2l3" class="px-4 py-3 flex gap-2 overflow-x-auto no-scrollbar border-b border-[#E9ECEF] text-sm font-semibold whitespace-nowrap">
+  <a href="#" class="px-4 py-2 rounded-full bg-[#EAF0FA] text-[#2B5BAA] flex items-center gap-2"><i class="fa-solid fa-grip text-xs"></i>Каталог</a>
+  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">Доставка и оплата</a>
+  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">Гарантии</a>
+  <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">О нас</a>
+</nav>
+
+<main data-design-id="m-main-m4n5o6">
+
+<section data-design-id="m-hero-p7q8r9" class="bg-[#F8F9FA] px-4 pt-7 pb-14">
+  <span class="inline-flex items-center gap-2 rounded-full bg-white border border-[#E9ECEF] px-3 py-1.5 text-xs font-semibold text-[#5F6670]">
+    <span class="flex gap-0.5"><span class="h-1.5 w-1.5 rounded-full bg-[#2B5BAA]"></span><span class="h-1.5 w-1.5 rounded-full bg-[#E63329]"></span><span class="h-1.5 w-1.5 rounded-full bg-[#F7C52D]"></span><span class="h-1.5 w-1.5 rounded-full bg-[#4CAF50]"></span></span>
+    Семейная мастерская · с 2017 года
+  </span>
+  <h1 class="mt-4 font-display font-black text-[34px] leading-[1.08]">Развивающие игрушки из дерева — <span class="text-[#2B5BAA]" style="width: 242px; height: 83px;">из нашей мастерской</span></h1>
+  <p class="mt-3 text-base leading-relaxed text-[#5F6670]">Бизидомики, кукольные домики и игры. Все готово к игре сразу после доставки.</p>
+  <div class="relative mt-6">
+    <div class="rounded-[24px] overflow-hidden aspect-square"><img src="assets/optima.jpg" alt="Бизидомик Макси" class="w-full h-full object-cover"></div>
+    <div class="absolute left-3 bottom-3 bg-white rounded-2xl shadow-lg p-3 pr-4 flex items-center gap-3">
+      <div class="h-11 w-11 rounded-lg overflow-hidden"><img src="assets/maxi.jpg" alt="" class="w-full h-full object-cover"></div>
+      <div class="leading-tight"><div class="text-[10px] font-bold text-[#E63329] uppercase tracking-wide">Хит продаж</div><div class="font-display font-extrabold text-sm">Бизидомик Макси</div><div class="text-xs text-[#5F6670]">от <b class="text-[#1C1C1C]">280 Br</b></div></div>
+    </div>
+  </div>
+  <div class="mt-6 space-y-3">
+    <button data-design-id="m-hero-cta-s1t2u3" type="button" class="w-full h-14 rounded-full bg-[#2B5BAA] text-white font-semibold flex items-center justify-center gap-3 shadow-[0_10px_24px_-8px_rgba(43,91,170,0.55)]">Выбрать игрушку <i class="fa-solid fa-arrow-right"></i></button>
+    <button data-design-id="m-hero-cta2-v4w5x6" type="button" class="w-full h-14 rounded-full border-2 border-[#2B5BAA] text-[#2B5BAA] font-semibold">Смотреть бизидомики</button>
+  </div>
+  <div class="mt-5 flex items-center justify-center gap-2 text-sm text-[#5F6670]"><span class="text-[#F7C52D] text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><b class="text-[#1C1C1C]">15 000+</b> покупателей</div>
+</section>
+
+<section data-design-id="m-benefits-y7z8a9" class="px-4 -mt-8 relative z-10">
+  <div class="grid grid-cols-2 gap-3">
+    <div class="bg-white rounded-[20px] border border-[#E9ECEF] shadow-[0_10px_24px_-16px_rgba(28,28,28,0.2)] p-4">
+      <div class="h-10 w-10 rounded-xl bg-[#FEF6DC] text-[#C99A08] flex items-center justify-center"><i class="fa-solid fa-gift"></i></div>
+      <div class="mt-3 font-display font-extrabold text-[15px] leading-tight">Кэшбэк 10 руб.</div><p class="text-xs text-[#5F6670] mt-1">После покупки на карту</p>
+    </div>
+    <div class="bg-white rounded-[20px] border border-[#E9ECEF] shadow-[0_10px_24px_-16px_rgba(28,28,28,0.2)] p-4">
+      <div class="h-10 w-10 rounded-xl bg-[#EAF6EB] text-[#3B9C40] flex items-center justify-center"><i class="fa-solid fa-truck"></i></div>
+      <div class="mt-3 font-display font-extrabold text-[15px] leading-tight">Бесплатная доставка</div><p class="text-xs text-[#5F6670] mt-1">До отделения почты по Беларуси</p>
+    </div>
+    <div class="bg-white rounded-[20px] border border-[#E9ECEF] shadow-[0_10px_24px_-16px_rgba(28,28,28,0.2)] p-4">
+      <div class="h-10 w-10 rounded-xl bg-[#FDECEB] text-[#E63329] flex items-center justify-center"><i class="fa-solid fa-shield-heart"></i></div>
+      <div class="mt-3 font-display font-extrabold text-[15px] leading-tight">Гарантия возврата</div><p class="text-xs text-[#5F6670] mt-1">Без чеков и споров</p>
+    </div>
+    <div class="bg-white rounded-[20px] border border-[#E9ECEF] shadow-[0_10px_24px_-16px_rgba(28,28,28,0.2)] p-4">
+      <div class="h-10 w-10 rounded-xl bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center"><i class="fa-solid fa-credit-card"></i></div>
+      <div class="mt-3 font-display font-extrabold text-[15px] leading-tight">Рассрочка 0%</div><p class="text-xs text-[#5F6670] mt-1">На 4 месяца без переплат</p>
+    </div>
+  </div>
+</section>
+
+<section data-design-id="m-products-b1c2d3" class="px-4 pt-14 pb-14">
+  <span class="text-xs font-semibold uppercase tracking-wider text-[#E63329]">Каталог</span>
+  <h2 class="mt-1 font-display font-extrabold text-[28px] leading-tight">Что подарить ребёнку?</h2>
+  <p class="mt-1 text-sm text-[#5F6670]">Подберите модель по возрасту малыша</p>
+  <div class="mt-4 flex gap-2 text-sm font-semibold">
+    <a href="#" class="px-4 py-2 rounded-full bg-[#1C1C1C] text-white">Все</a>
+    <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">1–3 года</a>
+    <a href="#" class="px-4 py-2 rounded-full border border-[#E9ECEF]">3–10 лет</a>
+  </div>
+  <div class="mt-5 space-y-5">
+    <article data-design-id="m-product-maxi-e4f5g6" class="bg-white rounded-[24px] border border-[#E9ECEF] overflow-hidden shadow-[0_8px_24px_-16px_rgba(28,28,28,0.2)]">
+      <div class="relative aspect-[4/3] bg-[#F8F9FA]"><img src="assets/maxi.jpg" alt="Бизидомик Макси" class="w-full h-full object-cover">
+        <span class="absolute top-3 left-3 rounded-full bg-[#E63329] text-white text-[11px] font-bold px-3 py-1">Хит продаж</span>
+        <span class="absolute top-3 right-3 rounded-full bg-white text-[11px] font-bold px-3 py-1 flex items-center gap-1"><i class="fa-solid fa-child-reaching text-[#2B5BAA]"></i>1–3 года</span>
+      </div>
+      <div class="p-5">
+        <h3 class="font-display font-extrabold text-xl">Бизидомик Макси</h3>
+        <p class="mt-1.5 text-sm leading-relaxed text-[#5F6670]">Большой развивающий домик с десятками элементов — замочки, шестерёнки, свет, сортеры</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div><span class="text-sm text-[#5F6670]">от</span> <span class="font-display font-black text-2xl">280 Br</span><div class="text-xs text-[#5F6670]">или 70 Br × 4 мес.</div></div>
+          <button data-design-id="m-product-btn-maxi-h7i8j9" type="button" class="h-12 px-5 rounded-full bg-[#EAF0FA] text-[#2B5BAA] text-sm font-semibold">Выбрать Макси</button>
+        </div>
+      </div>
+    </article>
+    <article data-design-id="m-product-mini-k1l2m3" class="bg-white rounded-[24px] border border-[#E9ECEF] overflow-hidden shadow-[0_8px_24px_-16px_rgba(28,28,28,0.2)]">
+      <div class="relative aspect-[4/3] bg-[#F8F9FA]"><img src="assets/mini.jpg" alt="Бизидомик Мини" class="w-full h-full object-cover">
+        <span class="absolute top-3 left-3 rounded-full bg-[#4CAF50] text-white text-[11px] font-bold px-3 py-1">Для малышей</span>
+        <span class="absolute top-3 right-3 rounded-full bg-white text-[11px] font-bold px-3 py-1 flex items-center gap-1"><i class="fa-solid fa-child-reaching text-[#2B5BAA]"></i>1–3 года</span>
+      </div>
+      <div class="p-5">
+        <h3 class="font-display font-extrabold text-xl">Бизидомик Мини</h3>
+        <p class="mt-1.5 text-sm leading-relaxed text-[#5F6670]">Компактный домик для малышей. Развивает моторику, внимание и логику</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div><span class="font-display font-black text-2xl">120 Br</span><div class="text-xs text-[#5F6670]">или 30 Br × 4 мес.</div></div>
+          <button data-design-id="m-product-btn-mini-n4o5p6" type="button" class="h-12 px-5 rounded-full bg-[#EAF0FA] text-[#2B5BAA] text-sm font-semibold">Выбрать Мини</button>
+        </div>
+      </div>
+    </article>
+    <article data-design-id="m-product-doll-q7r8s9" class="bg-white rounded-[24px] border border-[#E9ECEF] overflow-hidden shadow-[0_8px_24px_-16px_rgba(28,28,28,0.2)]">
+      <div class="relative aspect-[4/3] bg-[#F8F9FA]"><img src="assets/dollhouse.jpg" alt="Кукольный домик" class="w-full h-full object-cover">
+        <span class="absolute top-3 left-3 rounded-full bg-[#F7C52D] text-[11px] font-bold px-3 py-1">35+ элементов</span>
+        <span class="absolute top-3 right-3 rounded-full bg-white text-[11px] font-bold px-3 py-1 flex items-center gap-1"><i class="fa-solid fa-child-reaching text-[#2B5BAA]"></i>3–10 лет</span>
+      </div>
+      <div class="p-5">
+        <h3 class="font-display font-extrabold text-xl">Кукольный домик</h3>
+        <p class="mt-1.5 text-sm leading-relaxed text-[#5F6670]">Трёхэтажный домик с мебелью — более 35 элементов. Уже собран, сразу к игре</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div><span class="font-display font-black text-2xl">250 Br</span><div class="text-xs text-[#5F6670]">или 62,5 Br × 4 мес.</div></div>
+          <button data-design-id="m-product-btn-doll-t1u2v3" type="button" class="h-12 px-5 rounded-full bg-[#EAF0FA] text-[#2B5BAA] text-sm font-semibold">Выбрать домик</button>
+        </div>
+      </div>
+    </article>
+  </div>
+  <a href="#" class="mt-5 h-12 w-full rounded-full border border-[#E9ECEF] text-sm font-semibold text-[#2B5BAA] flex items-center justify-center gap-2">Смотреть весь каталог <i class="fa-solid fa-arrow-right"></i></a>
+</section>
+
+<section data-design-id="m-reviews-w4x5y6" class="bg-[#F8F9FA] py-14">
+  <div class="px-4">
+    <span class="text-xs font-semibold uppercase tracking-wider text-[#E63329]">Отзывы</span>
+    <h2 class="mt-1 font-display font-extrabold text-[28px] leading-tight">За 9 лет — более 15 000 довольных покупателей</h2>
+  </div>
+  <div class="mt-6 flex gap-3 overflow-x-auto no-scrollbar px-4 snap-x">
+    <article data-design-id="m-review-1-z7a8b9" class="snap-start shrink-0 w-[300px] bg-white rounded-[20px] border border-[#E9ECEF] p-5 flex flex-col">
+      <div class="text-[#F7C52D] text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="mt-3 text-sm leading-relaxed">«Брали Макси для малыша на 1 годик. Отправили в день заказа. Малышу очень интересно. Идеально гладкий, не поцарапается.»</p>
+      <div class="mt-auto pt-5 flex items-center gap-3"><span class="h-9 w-9 rounded-full bg-[#FDECEB] text-[#E63329] font-bold text-xs flex items-center justify-center">SD</span><div class="leading-tight"><div class="font-semibold text-sm">Sasha Dobrovolskaya</div><div class="text-xs text-[#5F6670]">Декабрь 2025</div></div></div>
+    </article>
+    <article data-design-id="m-review-2-c1d2e3" class="snap-start shrink-0 w-[300px] bg-white rounded-[20px] border border-[#E9ECEF] p-5 flex flex-col">
+      <div class="text-[#F7C52D] text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="mt-3 text-sm leading-relaxed">«Прекрасный домик для деток. Качество на высоте, сборка не нужна. У нас на празднике завлек детей всех возрастов от годика до десяти.»</p>
+      <div class="mt-auto pt-5 flex items-center gap-3"><span class="h-9 w-9 rounded-full bg-[#EAF6EB] text-[#3B9C40] font-bold text-xs flex items-center justify-center">НР</span><div class="leading-tight"><div class="font-semibold text-sm">Наташа Русина</div><div class="text-xs text-[#5F6670]">Январь 2026</div></div></div>
+    </article>
+    <article data-design-id="m-review-3-f4g5h6" class="snap-start shrink-0 w-[300px] bg-white rounded-[20px] border border-[#E9ECEF] p-5 flex flex-col">
+      <div class="text-[#F7C52D] text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="mt-3 text-sm leading-relaxed">«Очень качественные и красивые игрушки! Видно, с какой любовью они относятся к своему делу! Всем рекомендую.»</p>
+      <div class="mt-auto pt-5 flex items-center gap-3"><span class="h-9 w-9 rounded-full bg-[#EAF0FA] text-[#2B5BAA] font-bold text-xs flex items-center justify-center">DZ</span><div class="leading-tight"><div class="font-semibold text-sm">Denis Zubkovski</div><div class="text-xs text-[#5F6670]">Февраль 2026</div></div></div>
+    </article>
+  </div>
+  <div class="mt-4 flex justify-center gap-1.5"><span class="h-1.5 w-5 rounded-full bg-[#2B5BAA]"></span><span class="h-1.5 w-1.5 rounded-full bg-[#C9CED4]"></span><span class="h-1.5 w-1.5 rounded-full bg-[#C9CED4]"></span></div>
+  <div class="px-4 mt-5">
+    <a href="#" class="h-12 w-full rounded-full bg-white border border-[#E9ECEF] text-sm font-semibold flex items-center justify-center gap-2"><i class="fa-brands fa-instagram text-[#E63329] text-base"></i>Смотреть видеоотзывы в Instagram <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<section data-design-id="m-why-i7j8k9" class="px-4 py-14">
+  <span class="text-xs font-semibold uppercase tracking-wider text-[#E63329]">Почему мы</span>
+  <h2 class="mt-1 font-display font-extrabold text-[28px] leading-tight">Почему выбирают KuboToys</h2>
+  <div class="mt-6 grid grid-cols-2 gap-3">
+    <div class="rounded-[20px] border border-[#E9ECEF] p-4"><div class="h-10 w-10 rounded-xl bg-[#EAF0FA] text-[#2B5BAA] flex items-center justify-center"><i class="fa-solid fa-hammer"></i></div><h3 class="mt-3 font-display font-extrabold text-[15px] leading-tight">Собственная мастерская</h3><p class="mt-1 text-xs text-[#5F6670] leading-relaxed">Делаем сами, контролируем качество на каждом этапе</p></div>
+    <div class="rounded-[20px] border border-[#E9ECEF] p-4"><div class="h-10 w-10 rounded-xl bg-[#EAF6EB] text-[#3B9C40] flex items-center justify-center"><i class="fa-solid fa-file-shield"></i></div><h3 class="mt-3 font-display font-extrabold text-[15px] leading-tight">Сертификат ТР ЕАС</h3><p class="mt-1 text-xs text-[#5F6670] leading-relaxed">Прошли необходимые испытания</p></div>
+    <div class="rounded-[20px] border border-[#E9ECEF] p-4"><div class="h-10 w-10 rounded-xl bg-[#FDECEB] text-[#E63329] flex items-center justify-center"><i class="fa-solid fa-rocket"></i></div><h3 class="mt-3 font-display font-extrabold text-[15px] leading-tight">Отправка в день заказа</h3><p class="mt-1 text-xs text-[#5F6670] leading-relaxed">Всегда на связи в мессенджерах</p></div>
+    <div class="rounded-[20px] border border-[#E9ECEF] p-4"><div class="h-10 w-10 rounded-xl bg-[#FEF6DC] text-[#C99A08] flex items-center justify-center"><i class="fa-solid fa-earth-europe"></i></div><h3 class="mt-3 font-display font-extrabold text-[15px] leading-tight">Игрушки в 58 странах</h3><p class="mt-1 text-xs text-[#5F6670] leading-relaxed">Нашим покупателям доверяют по всему миру</p></div>
+  </div>
+</section>
+
+<section data-design-id="m-workshop-l1m2n3" class="px-4 pb-14">
+  <div class="rounded-[28px] bg-[#FFF9E8] p-6">
+    <div class="flex justify-center"><div class="rounded-full bg-white p-2 shadow-[0_16px_32px_-20px_rgba(28,28,28,0.3)]"><img src="assets/workshop.jpg" alt="Команда KuboToys" class="w-[240px] h-[240px] rounded-full object-cover"></div></div>
+    <span class="mt-6 block text-xs font-semibold uppercase tracking-wider text-[#C99A08]">Мастерская</span>
+    <h2 class="mt-1 font-display font-extrabold text-[26px] leading-tight">Делаем с любовью в нашей мастерской</h2>
+    <p class="mt-3 text-[15px] leading-relaxed text-[#3F454D]">Каждая игрушка сделана из берёзовой фанеры, отшлифована и проверена в нашей семейной мастерской в Беларуси. Мебель уже собрана — просто достаньте и играйте.</p>
+    <div class="mt-5 flex flex-wrap gap-2">
+      <span class="rounded-full bg-white px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5"><i class="fa-solid fa-tree text-[#4CAF50]"></i>Берёзовая фанера</span>
+      <span class="rounded-full bg-white px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5"><i class="fa-solid fa-hand-sparkles text-[#2B5BAA]"></i>Ручная шлифовка</span>
+      <span class="rounded-full bg-white px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5"><i class="fa-solid fa-box-open text-[#E63329]"></i>Мебель уже собрана</span>
+    </div>
+    <div class="mt-6 grid grid-cols-3 gap-3 border-t border-[#F1E3B8] pt-5 text-center">
+      <div><div class="font-display font-black text-2xl text-[#2B5BAA]">9 лет</div><div class="text-[11px] text-[#5F6670]">делаем игрушки</div></div>
+      <div><div class="font-display font-black text-2xl text-[#E63329]">15 000+</div><div class="text-[11px] text-[#5F6670]">покупателей</div></div>
+      <div><div class="font-display font-black text-2xl text-[#3B9C40]">58</div><div class="text-[11px] text-[#5F6670]">стран мира</div></div>
+    </div>
+  </div>
+</section>
+
+<section data-design-id="m-press-o4p5q6" class="px-4 pb-14">
+  <h2 class="font-display font-extrabold text-[22px]">О нас пишут</h2>
+  <div class="mt-4 grid grid-cols-2 gap-3">
+    <a href="#" class="h-16 rounded-2xl border border-[#E9ECEF] flex items-center justify-center gap-2 text-[#5F6670]"><i class="fa-solid fa-tv text-sm"></i><span class="font-display font-black text-sm">Телеканал МИР</span></a>
+    <a href="#" class="h-16 rounded-2xl border border-[#E9ECEF] flex items-center justify-center text-[#5F6670]"><span class="font-bold text-lg tracking-tight">onliner<span class="text-[#2B5BAA]">.by</span></span></a>
+    <a href="#" class="h-16 rounded-2xl border border-[#E9ECEF] flex items-center justify-center text-[#5F6670]"><span class="font-semibold text-sm uppercase tracking-[0.06em]">Pro<span class="font-black">Business</span>.io</span></a>
+    <a href="#" class="h-16 rounded-2xl border border-[#E9ECEF] flex items-center justify-center text-[#5F6670]"><span class="font-display font-extrabold text-base">Online<span class="text-[#E63329]">Brest</span>.by</span></a>
+  </div>
+</section>
+
+<section data-design-id="m-cta-r7s8t9" class="px-4 pb-14">
+  <div class="rounded-[28px] bg-[#2B5BAA] overflow-hidden text-white">
+    <div class="p-6">
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-xs font-semibold"><span class="h-2 w-2 rounded-full bg-[#4CAF50]"></span>Ответим за 5 минут</span>
+      <h2 class="mt-4 font-display font-extrabold text-[26px] leading-tight">Помогаем выбрать подходящую игрушку</h2>
+      <p class="mt-2 text-[15px] text-white/80">Напишите нам — подберём модель по возрасту и бюджету</p>
+      <div class="mt-5 space-y-3">
+        <button data-design-id="m-cta-tg-u1v2w3" type="button" class="w-full h-14 rounded-full bg-white text-[#2B5BAA] font-semibold flex items-center justify-center gap-3"><i class="fa-brands fa-telegram text-xl text-[#229ED9]"></i>Написать в Telegram</button>
+        <button data-design-id="m-cta-wa-x4y5z6" type="button" class="w-full h-14 rounded-full bg-[#4CAF50] text-white font-semibold flex items-center justify-center gap-3"><i class="fa-brands fa-whatsapp text-xl"></i>Написать в WhatsApp</button>
+      </div>
+    </div>
+    <div class="bg-white mx-3 mb-3 rounded-[20px] flex justify-center"><img src="assets/kid.jpg" alt="Мальчик с бизидомиком" class="w-[260px] h-[260px] object-contain"></div>
+  </div>
+</section>
+
+</main>
+
+<footer data-design-id="m-footer-a7b8c9" class="bg-[#F8F9FA] border-t border-[#E9ECEF] px-4 pt-10 pb-8">
+  <img src="assets/logo.png" alt="KuboToys" class="h-9 w-auto">
+  <p class="mt-3 text-sm leading-relaxed text-[#5F6670]">Семейная мастерская развивающих игрушек из дерева. Сделано в Беларуси с 2017 года.</p>
+  <nav data-design-id="m-footer-nav-d1e2f3" class="mt-6 grid grid-cols-2 gap-y-3 text-sm font-medium">
+    <a href="#">Каталог</a><a href="#">Гарантии</a>
+    <a href="#">Доставка</a><a href="#">О нас</a>
+    <a href="#">Рассрочка</a><a href="#">Сертификаты</a>
+  </nav>
+  <div class="mt-6 pt-6 border-t border-[#E9ECEF]">
+    <a href="#" class="block font-display font-extrabold text-xl">+375 (33) 318-18-22</a>
+    <p class="text-xs text-[#5F6670] mt-1">Ежедневно 9:00–21:00</p>
+    <div class="mt-3 flex gap-2">
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#229ED9] flex items-center justify-center"><i class="fa-brands fa-telegram text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#3B9C40] flex items-center justify-center"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+      <a href="#" class="h-11 w-11 rounded-full bg-white border border-[#E9ECEF] text-[#E63329] flex items-center justify-center"><i class="fa-brands fa-instagram text-lg"></i></a>
+    </div>
+  </div>
+  <div class="mt-6 pt-5 border-t border-[#E9ECEF] text-[11px] leading-relaxed text-[#5F6670]">
+    ©2017–2026 Kubotoys.by<br>ИП Римаренко Павел Валерьевич · УНП 291293260
+  </div>
+</footer>
+
+
+
+</body></html>
